@@ -1,5 +1,5 @@
 #!/bin/sh
-DirCode=~/github
+DirCode=$HOME/github
 
 cd $DirCode/r-source
 git fetch

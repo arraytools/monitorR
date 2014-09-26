@@ -17,6 +17,7 @@ r_lstdate <- c(r_lstdate, as.character(Sys.Date()))
 save(r_lst, r_lstdate, file = file.path(HOME, DirCode, "r_lst.RData"))
 
 flfreq <- table(unlist(r_lst))
+file.copy(file.path(HOME, DirCode, "flfreq.txt"), file.path(HOME, DirCode, "flfreq_old.txt"))
 write.table(flfreq, file =file.path(HOME, DirCode, "flfreq.txt"), 
             row.names=F, col.names=F, quote=F)
 
